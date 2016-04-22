@@ -1,0 +1,24 @@
+{
+  "name": "FSLogger",
+  "version": "0.1.0",
+  "summary": "A short description of FSLogger.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/FSLogger",
+  "license": "MIT",
+  "authors": {
+    "王正一": "wangzhengyi@qufenqi.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/FSLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FSLogger/Classes/**/*",
+  "resource_bundles": {
+    "FSLogger": [
+      "FSLogger/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_FSLogger_Tests {
+  umbrella header "Pods-FSLogger_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

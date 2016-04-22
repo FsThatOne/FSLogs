@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "FSLogger"
+  s.name             = "FSLogs"
   s.version          = "0.1.0"
-  s.summary          = "A short description of FSLogger."
+  s.summary          = "A log tool in Swift."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,23 +18,27 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                       DESC
+                         1.支持分级输出,可自定义最低输出等级(Info,Warn,Error,All)
+                         2.彩色输出
+                         3.输出日志文件到应用沙盒,必要时可查看日志
+                         4.开关控制输出与否
+                     DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FSLogger"
+  s.homepage         = "https://github.com/FsThatOne/FSLogs"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "王正一" => "wangzhengyi@qufenqi.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FSLogger.git", :tag => s.version.to_s }
+  s.author           = { "王正一" => "fsymbio@icloud.com" }
+  s.source           = { :git => "https://github.com/FsThatOne/FSLogs.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'FSLogger/Classes/**/*'
-  s.resource_bundles = {
-    'FSLogger' => ['FSLogger/Assets/*.png']
-  }
+  # s.resource_bundles = {
+  #   'FSLogger' => ['FSLogger/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

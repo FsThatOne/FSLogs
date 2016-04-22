@@ -1,0 +1,14 @@
+PODS:
+  - FSLogger (0.1.0)
+
+DEPENDENCIES:
+  - FSLogger (from `../`)
+
+EXTERNAL SOURCES:
+  FSLogger:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FSLogger: 865fcceb976c42b7873fbc88d28da34e68e1007b
+
+COCOAPODS: 0.39.0
