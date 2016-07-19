@@ -11,10 +11,10 @@ import UIKit
 public typealias FSColor = UIColor
 
 public enum outputLevel {
-    case All
-    case Info
-    case Warnning
-    case Error
+    case all
+    case info
+    case warnning
+    case error
 }
 
 ///Debug logLevel - All
@@ -38,7 +38,7 @@ public struct FSLog {
     #endif
     
     /// 输出等级 1 - 4 分别为all, info, warning, error, 默认为ALL
-    public static var logLevelShown : outputLevel = .All
+    public static var logLevelShown : outputLevel = .all
     
     public static var colorForLogLevels : [FSColor] = [
         FSColor(r: 120, g: 120, b: 120),        //灰色
@@ -62,58 +62,58 @@ public struct FSLog {
 // MARK: - log日志输出到沙盒文档
 public func saveOutputLogInfos(stringToSave string: String?){
     //时间戳
-    let dateFormat = NSDateFormatter()
-    dateFormat.locale = NSLocale(localeIdentifier: "zh_CN")
+    let dateFormat = DateFormatter()
+    dateFormat.locale = Locale(localeIdentifier: "zh_CN")
     dateFormat.dateFormat = "yyyy-MM-dd"
-    let dateStr = dateFormat.stringFromDate(NSDate())
+    let dateStr = dateFormat.string(from: Date())
     
     //获取文件路径
-    let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+    let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
     var logDirectory = paths.first
-    logDirectory!.appendContentsOf("/Log")
+    logDirectory!.append("/Log")
     //判断文件夹是否存在
-    let isDirExist = NSFileManager.defaultManager().fileExistsAtPath(logDirectory!)
+    let isDirExist = FileManager.default.fileExists(atPath: logDirectory!)
     //如果存在则直接写入,否则去创建
     if isDirExist != true {
         do {
             //创建log文件
-            try NSFileManager.defaultManager().createDirectoryAtPath(logDirectory!, withIntermediateDirectories: true, attributes: nil)
+            try FileManager.default.createDirectory(atPath: logDirectory!, withIntermediateDirectories: true, attributes: nil)
         } catch {
             return
         }
     }
     //获取文件夹路径
-    let logFilePath = logDirectory!.stringByAppendingString("/\(dateStr).log")
-    let isFileExist = NSFileManager.defaultManager().fileExistsAtPath(logFilePath)
+    let logFilePath = logDirectory! + "/\(dateStr).log"
+    let isFileExist = FileManager.default.fileExists(atPath: logFilePath)
     if isFileExist != true {
         do {
             //文件内容以时间戳作为开头
             let dateStringForStart = dateStr + "\n"
             //创建文件并向文件内写入时间戳开头
-            try dateStringForStart.writeToFile(logFilePath, atomically: false, encoding: NSUTF8StringEncoding)
+            try dateStringForStart.write(toFile: logFilePath, atomically: false, encoding: String.Encoding.utf8)
         } catch {
             return
         }
     }
-    let fileHandle = NSFileHandle(forWritingAtPath: logFilePath)
+    let fileHandle = FileHandle(forWritingAtPath: logFilePath)
     if fileHandle == nil {
         return
     }
     fileHandle?.seekToEndOfFile()
-    let writeData: NSData? = string?.dataUsingEncoding(NSUTF8StringEncoding)
+    let writeData: Data? = string?.data(using: String.Encoding.utf8)
     if writeData == nil {
         return
     }
-    fileHandle?.writeData(writeData!)
+    fileHandle?.write(writeData!)
     fileHandle?.closeFile()
     // TODO: - log文件每周清理一次
     
 }
 
 // MARK: - log输出有关
-private func FSLogManager<T>(obj: T, file: String, function: String, line: Int, level: outputLevel){
+private func FSLogManager<T>(_ obj: T, file: String, function: String, line: Int, level: outputLevel){
     
-    let fileName = file.NS.lastPathComponent.NS.stringByDeletingPathExtension
+    let fileName = file.NS.lastPathComponent.NS.deletingPathExtension
     
     if FSLog.shouldPrint(fileName: fileName, level: level) {
         let infoPart : String = "\(fileName).\(function)[\(line)]"
@@ -121,8 +121,8 @@ private func FSLogManager<T>(obj: T, file: String, function: String, line: Int, 
     }
 }
 
-private func printLog<T>(informationPart: String, objText: T, level: outputLevel){
-    print("\(colorLogs.colorTheLog(informationPart, colorLevel: outputLevel.Info))", terminator: "")
+private func printLog<T>(_ informationPart: String, objText: T, level: outputLevel){
+    print("\(colorLogs.colorTheLog(informationPart, colorLevel: outputLevel.info))", terminator: "")
     saveOutputLogInfos(stringToSave: "\(informationPart)")
     print("\(colorLogs.colorTheLog(objText, colorLevel: level))\n", terminator: "")
     saveOutputLogInfos(stringToSave: "\(objText)\n")
@@ -132,29 +132,29 @@ private struct colorLogs{
     private static let Escape = "\u{001b}["
     private static let Reset = Escape + ";"
     
-    static func colorTheLog<T>(obj: T, colorLevel: outputLevel) -> String {
+    static func colorTheLog<T>(_ obj: T, colorLevel: outputLevel) -> String {
         return "\(Escape)fg\(FSLog.colorForLogLevels[colorLevel.hashValue].r),\(FSLog.colorForLogLevels[colorLevel.hashValue].g),\(FSLog.colorForLogLevels[colorLevel.hashValue].b);\(obj)\(Reset)"
     }
 }
 
 // All - output : 灰色
-public func FS1<T>(all: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
-    FSLogManager(all, file: file, function: function, line: line, level: .All)
+public func FS1<T>(_ all: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+    FSLogManager(all, file: file, function: function, line: line, level: .all)
 }
 
 // Info - output : 白色
-public func FS2<T>(info: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
-    FSLogManager(info, file: file, function: function, line: line, level: .Info)
+public func FS2<T>(_ info: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+    FSLogManager(info, file: file, function: function, line: line, level: .info)
 }
 
 // Warnning - output : 灰色
-public func FS3<T>(warn: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
-    FSLogManager(warn, file: file, function: function, line: line, level: .Warnning)
+public func FS3<T>(_ warn: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+    FSLogManager(warn, file: file, function: function, line: line, level: .warnning)
 }
 
 // Error - output : 灰色
-public func FS4<T>(error: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
-    FSLogManager(error, file: file, function: function, line: line, level: .Error)
+public func FS4<T>(_ error: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+    FSLogManager(error, file: file, function: function, line: line, level: .error)
 }
 
 // extension String

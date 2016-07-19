@@ -7,79 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		378BB31A7F57AF23CC89E47B7EC67E5B /* Pods-FSLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F7AA32923C04B1A9483E0B7BDF3834 /* Pods-FSLogger_Tests-dummy.m */; };
-		795B7A506C074318057D3AAE7E9720F8 /* FSLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5394E5CBEE2C36607D88DB068745CFB /* FSLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96A4118E4ADD04BB27496CA8B94176A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9FDFB9A9FDD97A54D33162C3A3F478BF /* FSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4B6EE2FCFE33F7D02DF8D221E6EC92 /* FSLogger-dummy.m */; };
-		A2126DE7A5F6B8D7C53A7A61336F04AA /* FSLogger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEA34A8220B0E5084858D1F3E96B22BF /* FSLogger.bundle */; };
-		C7634F9A654C6D2EC64B8DECF915E5CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C7EE0187E909340D036F362E73877557 /* Pods-FSLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 523C4D0A689A12E80D0C5B3AD58CE944 /* Pods-FSLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2DE3D181D163C2700921E78 /* FSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE3D171D163C2700921E78 /* FSLogger.swift */; };
+		4B822E727139BD21BB82A0244032D3C6 /* FSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4B6EE2FCFE33F7D02DF8D221E6EC92 /* FSLogger-dummy.m */; };
+		7EFACE377B93AA7EFC99C6DEBC29939D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		B1E6CAEFC1C7192E210346EB12024C81 /* Pods-FSLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 523C4D0A689A12E80D0C5B3AD58CE944 /* Pods-FSLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBCD56FB016372AC8A0C47DC77F30F9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		F3D740A321BCC9C0209F70C1B280961C /* FSLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5394E5CBEE2C36607D88DB068745CFB /* FSLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC59419399CB2548C1E22996A75072E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		FF84B2BF72E22B3BAC4913121240493E /* Pods-FSLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F7AA32923C04B1A9483E0B7BDF3834 /* Pods-FSLogger_Tests-dummy.m */; };
+		FFDF215EAFB02ACAB84FC72D57208037 /* FSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF44E8D57C7EB053D0F1E7C522E4F /* FSLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C14C2AEF470D4F2B93AB8DDF0AFD540A /* PBXContainerItemProxy */ = {
+		C1F737C2EDAE8627A21924F58D1BF3BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A5A7410580755916C8A042BC9CD99C5;
+			remoteGlobalIDString = 623455B776CF8E8504935F1BBFEED352;
 			remoteInfo = FSLogger;
-		};
-		D5788A09596C8B8A3B5CDB9BA142E78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0D0FD876E6FA49BFD71751577504F2F;
-			remoteInfo = "FSLogger-FSLogger";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		40F7AA32923C04B1A9483E0B7BDF3834 /* Pods-FSLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSLogger_Tests-dummy.m"; sourceTree = "<group>"; };
 		523C4D0A689A12E80D0C5B3AD58CE944 /* Pods-FSLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FSLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5CB3846FF70A8C60DBEDC65606019A2E /* Pods-FSLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		65CA8D5D2379866CB3304D68A7A66EB4 /* Pods-FSLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FSLogger_Tests.modulemap"; sourceTree = "<group>"; };
+		72ACEF83D7ADF12315EE21387AF5E256 /* Pods_FSLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7823BAFCF1D37E9B56BC99C27E9412D0 /* Pods-FSLogger_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLogger_Tests-resources.sh"; sourceTree = "<group>"; };
 		7EA9ECC2F9541DF9C876EBC618B6BF65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8071CD8CE76C714886A15A7E60DA5AB4 /* Pods-FSLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		89A3D930DC318A2367700BE2D73BBA0E /* Pods-FSLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9280BF1263AF847857EE5D0DBDD1A228 /* Pods-FSLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9B46429939F6AF2D2D000FAD55AA15BC /* FSLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BD4B6EE2FCFE33F7D02DF8D221E6EC92 /* FSLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSLogger-dummy.m"; sourceTree = "<group>"; };
+		C2C5759DFB285433099F0CB4A063267D /* FSLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B2FF77B5C183C59F43D00153B3D011 /* FSLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSLogger.modulemap; sourceTree = "<group>"; };
+		CA5BF44E8D57C7EB053D0F1E7C522E4F /* FSLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FSLogger.swift; sourceTree = "<group>"; };
 		D0E61830934E04BE0CF4525D3E46AC4C /* FSLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLogger-prefix.pch"; sourceTree = "<group>"; };
 		D4E14625E68FEF8057D024ECCE89C8AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5394E5CBEE2C36607D88DB068745CFB /* FSLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSLogger-umbrella.h"; sourceTree = "<group>"; };
 		D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSLogger.xcconfig; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EDFAD7EF5A07935E431DB71D1037CB54 /* Pods-FSLogger_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSLogger_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F19904E779A8E1A8B5B7D21A8ABF3FAC /* Pods_FSLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2DE3D171D163C2700921E78 /* FSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSLogger.swift; sourceTree = "<group>"; };
-		FEA34A8220B0E5084858D1F3E96B22BF /* FSLogger.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSLogger.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FC1A8A6316324C8B98CE36E225EF22F /* Frameworks */ = {
+		8964EE7B24199D6C9CD2EC8409DF879C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7634F9A654C6D2EC64B8DECF915E5CF /* Foundation.framework in Frameworks */,
+				FCC59419399CB2548C1E22996A75072E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56F4E1C5F6F6CEDFD56EDFBA9C609847 /* Frameworks */ = {
+		E6EAD9DA2A9451839921C6C6C8316741 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A4118E4ADD04BB27496CA8B94176A2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CBDD1968A16DC41D1BEF63E71A547A79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7EFACE377B93AA7EFC99C6DEBC29939D /* Foundation.framework in Frameworks */,
+				EBCD56FB016372AC8A0C47DC77F30F9B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +91,14 @@
 			path = "Target Support Files/Pods-FSLogger_Tests";
 			sourceTree = "<group>";
 		};
+		32CD38FC422CEAAF7FD262CE311084FD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CA5BF44E8D57C7EB053D0F1E7C522E4F /* FSLogger.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		433A1C1AAD7FDF0E56EA3097FCF0A44A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +113,30 @@
 			path = "Example/Pods/Target Support Files/FSLogger";
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		761891FAEF53D5DEF852FBA6105FBCB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5759DFB285433099F0CB4A063267D /* FSLogger.framework */,
+				72ACEF83D7ADF12315EE21387AF5E256 /* Pods_FSLogger_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				E9C15F6EFB6B0E4A88DE28A614563EE4 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AB9BB6957487899364534CA06BA25BC6 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				761891FAEF53D5DEF852FBA6105FBCB7 /* Products */,
 				922E2EA96DDA769A7FB80AD23D89074F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -132,17 +144,9 @@
 		8485ABF9CE8FB0D31B0E674CDD7F8C82 /* FSLogger */ = {
 			isa = PBXGroup;
 			children = (
-				901B3D6732A47A93B3ACE52DA01DCC1E /* Classes */,
+				32CD38FC422CEAAF7FD262CE311084FD /* Classes */,
 			);
 			path = FSLogger;
-			sourceTree = "<group>";
-		};
-		901B3D6732A47A93B3ACE52DA01DCC1E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F2DE3D171D163C2700921E78 /* FSLogger.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		922E2EA96DDA769A7FB80AD23D89074F /* Targets Support Files */ = {
@@ -151,32 +155,6 @@
 				312E3873DA2E1804A6BD874A64EAC5C1 /* Pods-FSLogger_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AB9BB6957487899364534CA06BA25BC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FEA34A8220B0E5084858D1F3E96B22BF /* FSLogger.bundle */,
-				9B46429939F6AF2D2D000FAD55AA15BC /* FSLogger.framework */,
-				F19904E779A8E1A8B5B7D21A8ABF3FAC /* Pods_FSLogger_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		E25C9351E5A6DBF88990EC88DA523153 /* FSLogger */ = {
@@ -197,80 +175,70 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A5ABF646E832BCB44DEFC9869683C87C /* Headers */ = {
+		B69F01AA25C3EB0BE093DE1F1CCEBC8F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795B7A506C074318057D3AAE7E9720F8 /* FSLogger-umbrella.h in Headers */,
+				F3D740A321BCC9C0209F70C1B280961C /* FSLogger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5F100655F9462C8E92811B794F1F62B /* Headers */ = {
+		F62A63C5B6065D629C3AF33ED0443C4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EE0187E909340D036F362E73877557 /* Pods-FSLogger_Tests-umbrella.h in Headers */,
+				B1E6CAEFC1C7192E210346EB12024C81 /* Pods-FSLogger_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9A5A7410580755916C8A042BC9CD99C5 /* FSLogger */ = {
+		623455B776CF8E8504935F1BBFEED352 /* FSLogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD0A4C97836F6A5F74290405C17B75A9 /* Build configuration list for PBXNativeTarget "FSLogger" */;
+			buildConfigurationList = A08F11EBCE3502E1B4B23455D00835E6 /* Build configuration list for PBXNativeTarget "FSLogger" */;
 			buildPhases = (
-				BC1F6ADEEA6709F7288CF7BD469CF1FD /* Sources */,
-				0FC1A8A6316324C8B98CE36E225EF22F /* Frameworks */,
-				3FB5D2A04D9CA8219338B373AA1292FB /* Resources */,
-				A5ABF646E832BCB44DEFC9869683C87C /* Headers */,
+				5DD10411CDF0DDA8139ACB42A445C52E /* Sources */,
+				E6EAD9DA2A9451839921C6C6C8316741 /* Frameworks */,
+				B69F01AA25C3EB0BE093DE1F1CCEBC8F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2922FFA4C706BD972FE1445923FC4624 /* PBXTargetDependency */,
 			);
 			name = FSLogger;
 			productName = FSLogger;
-			productReference = 9B46429939F6AF2D2D000FAD55AA15BC /* FSLogger.framework */;
+			productReference = C2C5759DFB285433099F0CB4A063267D /* FSLogger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A0D0FD876E6FA49BFD71751577504F2F /* FSLogger-FSLogger */ = {
+		FE3312F30A901A0C504FFC4A9700C5FB /* Pods-FSLogger_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE14A0E3EB47D4EFBC5026A62C6E95EC /* Build configuration list for PBXNativeTarget "FSLogger-FSLogger" */;
+			buildConfigurationList = 6E69047CCF04CB25823F897FC6721FE2 /* Build configuration list for PBXNativeTarget "Pods-FSLogger_Tests" */;
 			buildPhases = (
-				070377789B8E6A30FD526ABD321891A9 /* Sources */,
-				CBDD1968A16DC41D1BEF63E71A547A79 /* Frameworks */,
-				1998105622CBACB89E3EC85D717A43BD /* Resources */,
+				B136E0C169D3CD0DF4DC05AAD91173E1 /* Sources */,
+				8964EE7B24199D6C9CD2EC8409DF879C /* Frameworks */,
+				F62A63C5B6065D629C3AF33ED0443C4B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "FSLogger-FSLogger";
-			productName = "FSLogger-FSLogger";
-			productReference = FEA34A8220B0E5084858D1F3E96B22BF /* FSLogger.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		D07EF287F6C2E6195DB8D0738F2D33EC /* Pods-FSLogger_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45EBC87BF83D4FADFBF8354B6694C1BF /* Build configuration list for PBXNativeTarget "Pods-FSLogger_Tests" */;
-			buildPhases = (
-				9BCBDA4A33695B850077EF346C8EA2A7 /* Sources */,
-				56F4E1C5F6F6CEDFD56EDFBA9C609847 /* Frameworks */,
-				E5F100655F9462C8E92811B794F1F62B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				466347D43835F4CE338081CCD72DC682 /* PBXTargetDependency */,
+				B822804629CD5E2748D70D17C482B3AC /* PBXTargetDependency */,
 			);
 			name = "Pods-FSLogger_Tests";
 			productName = "Pods-FSLogger_Tests";
-			productReference = F19904E779A8E1A8B5B7D21A8ABF3FAC /* Pods_FSLogger_Tests.framework */;
+			productReference = 72ACEF83D7ADF12315EE21387AF5E256 /* Pods_FSLogger_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -279,8 +247,16 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					623455B776CF8E8504935F1BBFEED352 = {
+						LastSwiftMigration = 0800;
+					};
+					FE3312F30A901A0C504FFC4A9700C5FB = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -290,82 +266,51 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AB9BB6957487899364534CA06BA25BC6 /* Products */;
+			productRefGroup = 761891FAEF53D5DEF852FBA6105FBCB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A5A7410580755916C8A042BC9CD99C5 /* FSLogger */,
-				A0D0FD876E6FA49BFD71751577504F2F /* FSLogger-FSLogger */,
-				D07EF287F6C2E6195DB8D0738F2D33EC /* Pods-FSLogger_Tests */,
+				623455B776CF8E8504935F1BBFEED352 /* FSLogger */,
+				FE3312F30A901A0C504FFC4A9700C5FB /* Pods-FSLogger_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		1998105622CBACB89E3EC85D717A43BD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3FB5D2A04D9CA8219338B373AA1292FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2126DE7A5F6B8D7C53A7A61336F04AA /* FSLogger.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		070377789B8E6A30FD526ABD321891A9 /* Sources */ = {
+		5DD10411CDF0DDA8139ACB42A445C52E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B822E727139BD21BB82A0244032D3C6 /* FSLogger-dummy.m in Sources */,
+				FFDF215EAFB02ACAB84FC72D57208037 /* FSLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BCBDA4A33695B850077EF346C8EA2A7 /* Sources */ = {
+		B136E0C169D3CD0DF4DC05AAD91173E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378BB31A7F57AF23CC89E47B7EC67E5B /* Pods-FSLogger_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC1F6ADEEA6709F7288CF7BD469CF1FD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FDFB9A9FDD97A54D33162C3A3F478BF /* FSLogger-dummy.m in Sources */,
-				F2DE3D181D163C2700921E78 /* FSLogger.swift in Sources */,
+				FF84B2BF72E22B3BAC4913121240493E /* Pods-FSLogger_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2922FFA4C706BD972FE1445923FC4624 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FSLogger-FSLogger";
-			target = A0D0FD876E6FA49BFD71751577504F2F /* FSLogger-FSLogger */;
-			targetProxy = D5788A09596C8B8A3B5CDB9BA142E78F /* PBXContainerItemProxy */;
-		};
-		466347D43835F4CE338081CCD72DC682 /* PBXTargetDependency */ = {
+		B822804629CD5E2748D70D17C482B3AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FSLogger;
-			target = 9A5A7410580755916C8A042BC9CD99C5 /* FSLogger */;
-			targetProxy = C14C2AEF470D4F2B93AB8DDF0AFD540A /* PBXContainerItemProxy */;
+			target = 623455B776CF8E8504935F1BBFEED352 /* FSLogger */;
+			targetProxy = C1F737C2EDAE8627A21924F58D1BF3BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -382,7 +327,10 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -396,10 +344,141 @@
 			};
 			name = Release;
 		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+		6F66B231E0FB3F5ABEE485D782D8113F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSLogger/FSLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSLogger/FSLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8ED9156F6D8D08B7025A926879DAC111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB3846FF70A8C60DBEDC65606019A2E /* Pods-FSLogger_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FSLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FSLogger_Tests/Pods-FSLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FSLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADEBE083F5B3AD681D771D2BBBFFE208 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9280BF1263AF847857EE5D0DBDD1A228 /* Pods-FSLogger_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FSLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FSLogger_Tests/Pods-FSLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FSLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B1D03932AE55EBDEE3592884A0AAC094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSLogger/FSLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSLogger/FSLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -419,6 +498,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -436,185 +516,32 @@
 			};
 			name = Debug;
 		};
-		6268FC084DDCEFC11DEEF700B32A4F48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = FSLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		908D14E8DE5A26166CE0BCF9756D36A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9280BF1263AF847857EE5D0DBDD1A228 /* Pods-FSLogger_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FSLogger_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FSLogger_Tests/Pods-FSLogger_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FSLogger_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		99C55707E9622BF7D4FDF00805714768 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = FSLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BECFE39781FCD13881DFC4C9C8B779EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FSLogger/FSLogger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSLogger/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FSLogger/FSLogger.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = FSLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C800EF9D69404D6D733C9F34758FC582 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7FBD285A8F2072D159BD7BC1572AD0F /* FSLogger.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FSLogger/FSLogger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FSLogger/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FSLogger/FSLogger.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = FSLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EAB81A6C02F15E9C07CC7C44E7657DF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CB3846FF70A8C60DBEDC65606019A2E /* Pods-FSLogger_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FSLogger_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FSLogger_Tests/Pods-FSLogger_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FSLogger_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45EBC87BF83D4FADFBF8354B6694C1BF /* Build configuration list for PBXNativeTarget "Pods-FSLogger_Tests" */ = {
+		6E69047CCF04CB25823F897FC6721FE2 /* Build configuration list for PBXNativeTarget "Pods-FSLogger_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EAB81A6C02F15E9C07CC7C44E7657DF9 /* Debug */,
-				908D14E8DE5A26166CE0BCF9756D36A8 /* Release */,
+				8ED9156F6D8D08B7025A926879DAC111 /* Debug */,
+				ADEBE083F5B3AD681D771D2BBBFFE208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD0A4C97836F6A5F74290405C17B75A9 /* Build configuration list for PBXNativeTarget "FSLogger" */ = {
+		A08F11EBCE3502E1B4B23455D00835E6 /* Build configuration list for PBXNativeTarget "FSLogger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BECFE39781FCD13881DFC4C9C8B779EB /* Debug */,
-				C800EF9D69404D6D733C9F34758FC582 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE14A0E3EB47D4EFBC5026A62C6E95EC /* Build configuration list for PBXNativeTarget "FSLogger-FSLogger" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99C55707E9622BF7D4FDF00805714768 /* Debug */,
-				6268FC084DDCEFC11DEEF700B32A4F48 /* Release */,
+				6F66B231E0FB3F5ABEE485D782D8113F /* Debug */,
+				B1D03932AE55EBDEE3592884A0AAC094 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
