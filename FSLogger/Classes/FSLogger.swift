@@ -8,8 +8,6 @@
 
 import UIKit
 
-public typealias FSColor = UIColor
-
 public enum outputLevel {
     case all
     case info
@@ -34,20 +32,20 @@ public struct FSLog {
     #if DEBUG
     public static var enable : Bool = true
     #else
-    public static var enable : Bool = false
+    public static var enable : Bool = true
     #endif
     
     /// 输出等级 1 - 4 分别为all, info, warning, error, 默认为ALL
     public static var logLevelShown : outputLevel = .all
     
-    public static var colorForLogLevels : [FSColor] = [
-        FSColor(r: 120, g: 120, b: 120),        //灰色
-        FSColor(r: 255, g: 255, b: 255),        //白色
-        FSColor(r: 240, g: 240, b: 80),         //黄色
-        FSColor(r: 255, g: 0, b: 0)               //红色
+    public static var colorForLogLevels : [String] = [
+        "⚪️Verbose⚪️",        //All
+        "🎾  Info 🎾",        //Info
+        "⚠️Warning⚠️",        //Warn
+        "‼️ Error ‼️"         //Error
     ]
     
-    private static func shouldPrint(fileName file: String, level: outputLevel) -> Bool {
+    fileprivate static func shouldPrint(fileName file: String, level: outputLevel) -> Bool {
         if !FSLog.enable {
             return false
         } else if level.hashValue < FSLog.logLevelShown.hashValue {
@@ -63,7 +61,7 @@ public struct FSLog {
 public func saveOutputLogInfos(stringToSave string: String?){
     //时间戳
     let dateFormat = DateFormatter()
-    dateFormat.locale = Locale(localeIdentifier: "zh_CN")
+    dateFormat.locale = Locale(identifier: "zh_CN")
     dateFormat.dateFormat = "yyyy-MM-dd"
     let dateStr = dateFormat.string(from: Date())
     
@@ -122,18 +120,16 @@ private func FSLogManager<T>(_ obj: T, file: String, function: String, line: Int
 }
 
 private func printLog<T>(_ informationPart: String, objText: T, level: outputLevel){
-    print("\(colorLogs.colorTheLog(informationPart, colorLevel: outputLevel.info))", terminator: "")
+    print("\(colorLogs.colorTheLog(informationPart, colorLevel: level))", terminator: "")
     saveOutputLogInfos(stringToSave: "\(informationPart)")
-    print("\(colorLogs.colorTheLog(objText, colorLevel: level))\n", terminator: "")
+    print("\(objText)\n", terminator: "")
     saveOutputLogInfos(stringToSave: "\(objText)\n")
 }
 
 private struct colorLogs{
-    private static let Escape = "\u{001b}["
-    private static let Reset = Escape + ";"
     
     static func colorTheLog<T>(_ obj: T, colorLevel: outputLevel) -> String {
-        return "\(Escape)fg\(FSLog.colorForLogLevels[colorLevel.hashValue].r),\(FSLog.colorForLogLevels[colorLevel.hashValue].g),\(FSLog.colorForLogLevels[colorLevel.hashValue].b);\(obj)\(Reset)"
+        return "<\(FSLog.colorForLogLevels[colorLevel.hashValue])>\(obj)"
     }
 }
 
@@ -164,27 +160,3 @@ private extension String {
     }
 }
 
-//extension FSColor
-private extension FSColor {
-    convenience init(r:CGFloat, g:CGFloat, b:CGFloat) {
-        self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1.0)
-    }
-    
-    var r : Int {
-        var red : CGFloat = 0
-        getRed(&red, green: nil, blue: nil, alpha: nil)
-        return Int(red * 255)
-    }
-    
-    var g : Int {
-        var green : CGFloat = 0
-        getRed(nil, green: &green, blue: nil, alpha: nil)
-        return Int(green * 255)
-    }
-    
-    var b : Int {
-        var blue : CGFloat = 0
-        getRed(nil, green: nil, blue: &blue, alpha: nil)
-        return Int(blue * 255)
-    }
-}

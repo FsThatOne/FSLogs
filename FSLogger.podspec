@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FSLogger"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "A log tool in Swift."
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/FsThatOne/FSLogs.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'FSLogger/Classes/**/*'
   # s.resource_bundles = {
