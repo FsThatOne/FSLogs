@@ -17,15 +17,15 @@ class Tests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
-        FS1("哈哈哈")
-        FS2("嘻嘻")
-        FS3("嘿嘿")
-        FS4("错啦!!!")
+        Fs("哈哈哈")
+        FsInfo("嘻嘻")
+        FsWarn("嘿嘿")
+        FsError("错啦!!!")
         FSLog.logLevelShown = .warnning
-        FS1("哈哈哈")
-        FS2("嘻嘻")
-        FS3("嘿嘿")
-        FS4("错啦!!!")
+        Fs("哈哈哈")
+        FsInfo("嘻嘻")
+        FsWarn("嘿嘿")
+        FsError("错啦!!!")
     }
     
     func testPerformanceExample() {

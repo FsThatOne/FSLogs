@@ -134,22 +134,22 @@ private struct colorLogs{
 }
 
 // All - output : 灰色
-public func FS1<T>(_ all: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+public func Fs<T>(_ all: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
     FSLogManager(all, file: file, function: function, line: line, level: .all)
 }
 
 // Info - output : 白色
-public func FS2<T>(_ info: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+public func FsInfo<T>(_ info: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
     FSLogManager(info, file: file, function: function, line: line, level: .info)
 }
 
 // Warnning - output : 灰色
-public func FS3<T>(_ warn: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+public func FsWarn<T>(_ warn: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
     FSLogManager(warn, file: file, function: function, line: line, level: .warnning)
 }
 
 // Error - output : 灰色
-public func FS4<T>(_ error: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
+public func FsError<T>(_ error: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line){
     FSLogManager(error, file: file, function: function, line: line, level: .error)
 }
 
